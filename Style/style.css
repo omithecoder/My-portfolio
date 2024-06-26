@@ -208,6 +208,10 @@ a.nav-link:hover {
 	color: white;
 }
 
+.cd {
+	width: 25rem;
+}
+
 .card-title {
 	font-weight: 800;
 }
@@ -378,8 +382,13 @@ a.nav-link:hover {
 
 /* skills cards responsive grid */
 @media (max-width: 600px) {
+	html {
+		width: 100%;
+	}
 	body {
-		height: 7043px;
+		width: 100vw;
+		height: 6843px;
+		overflow-x: hidden;
 	}
 
 	#skillsec {
@@ -389,7 +398,7 @@ a.nav-link:hover {
 		grid-template-columns: repeat(2, 150px);
 		grid-template-rows: repeat(2, 150);
 		gap: 15px;
-		margin-left: 42px;
+		margin-left: 2em;
 	}
 
 	#skillcard {
@@ -421,24 +430,23 @@ a.nav-link:hover {
 		width: 50%;
 		position: relative;
 		bottom: 70px;
-		margin-left: 52px;
+		margin-left: 0px;
 	}
 
 	#projsec {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;
 		gap: 30px;
-		padding: 20px;
 	}
 	.buttons {
 		display: flex;
 	}
 
 	#github {
-		width: 30vw;
-		height: 6vh;
+		width: 6em;
+		height: 3em;
 		background-color: rgb(141, 110, 246);
 		display: flex;
 		justify-content: center;
@@ -448,14 +456,14 @@ a.nav-link:hover {
 	}
 
 	#github > img {
-		height: 50px;
-		width: 50px;
+		height: 40px;
+		width: 40px;
 		background-color: white;
 		border-radius: 60%;
 	}
 	#youtube {
-		width: 30vw;
-		height: 6vh;
+		width: 7em;
+		height: 3em;
 		background-color: white;
 		display: flex;
 		justify-content: center;
@@ -467,8 +475,8 @@ a.nav-link:hover {
 		width: 50px;
 	}
 	#like {
-		width: 30vw;
-		height: 6vh;
+		width: 6em;
+		height: 3em;
 		background-color: white;
 		display: flex;
 		justify-content: center;
@@ -484,7 +492,7 @@ a.nav-link:hover {
 		width: 50%;
 		position: relative;
 		bottom: 70px;
-		margin-left: 52px;
+		margin-left: 0;
 		box-shadow: 1px 4px 8px 0.2px white;
 		border-radius: 10px;
 	}
@@ -519,18 +527,38 @@ a.nav-link:hover {
 		width: 65%;
 		position: relative;
 		bottom: 70px;
-		margin-left: 52px;
+		margin-left: 0;
 		box-shadow: 1px 3px 8px 0.2px white;
 		border-radius: 10px;
 	}
 
 	#contact .seprator {
-		width: 60%;
+		width: 88%;
 		position: relative;
 		bottom: 70px;
 		margin-left: 0px;
 		box-shadow: 1px 3px 8px 0.2px white;
 		border-radius: 10px;
+	}
+
+	.cd {
+		width: 21em;
+	}
+}
+
+@media (max-width: 390px) {
+	html {
+		overflow-x: hidden;
+	}
+
+	#skillsec {
+		height: 100%;
+		width: 92%;
+		display: grid;
+		grid-template-columns: repeat(2, 150px);
+		grid-template-rows: repeat(2, 150);
+		gap: 15px;
+		margin-left: 0.5em;
 	}
 }
 
